@@ -93,8 +93,8 @@ async def startupmessage():
         if BOTLOG:
             Config.JMTHONLOGO = await sbb_b.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f1e757035e56613a9ef92.jpg",
-                caption="**تم تشغيل سورس تيبثون بنجاح لعرض الاوامر ارسل .الاوامر**",
+                "https://telegra.ph/file/64ecd2733665aad3accbc.jpg",
+                caption="᯽︙ بــوت سيمو يـعـمـل بـنـجـاح  **\n\n**᯽︙ ارسل `.الاوامر` لرؤية اوامر السورس**\n\n**᯽︙ تـحـيـاتـي الـمـبـرمـجہ سـمـيـر",
                 buttons=[(Button.url("الـمـبـرمـجہ سـمـيـر", "https://t.me/DEV_SAMIR"),)],
             )
     except Exception as e:
@@ -236,9 +236,9 @@ async def verifyLoggerGroup():
             LOGS.error("هنالك خطا ما للتعرف على فار كروب الحفظ\n" + str(e))
     else:
         descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
-        photobt = await sbb_b.upload_file(file="razan/pic/tepthon.jpeg")
+        photobt = await sbb_b.upload_file(file="razan/pic/semo2.jpeg")
         _, groupid = await create_supergroup(
-            "كروب بوت تيبثون", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "جروب اشعارات سيمو", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الحفظ بنجاح")
@@ -261,9 +261,9 @@ async def verifyLoggerGroup():
             LOGS.error("حدث خطأ اثناء التعرف على كروب التخزين\n" + str(e))
     else:
         descript = "❃ لا تحذف او تغادر المجموعه وظيفتها حفظ رسائل التي تأتي على الخاص"
-        photobt = await sbb_b.upload_file(file="razan/pic/tepthon.jpeg")
+        photobt = await sbb_b.upload_file(file="razan/pic/semo1.jpeg")
         _, groupid = await create_supergroup(
-            "مجموعة التخزين", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة تخزين سيمو", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تم عمل الكروب التخزين بنجاح واضافة الفارات اليه.")
