@@ -245,7 +245,7 @@ async def permalink(mention):
 
 @sbb_b.on(admin_cmd(pattern="سيد(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
-    await edit_or_reply(mention, f"سماحة السيد حسين علي مطور سورس الجوكر @jmthon")
+    await edit_or_reply(mention, f"سماحة السيد حسين علي مطور سورس الجوكر @FTTUTY")
 
 @sbb_b.on(admin_cmd(pattern="رفع ايجة(?:\s|$)([\s\S]*)"))
 async def permalink(mention):
