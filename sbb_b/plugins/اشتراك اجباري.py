@@ -172,7 +172,7 @@ async def reda(event):
                 if "error_code" in reqt:
                     await sbb_b.tgbot.send_message(
                         BOTLOG_CHATID,
-                        f"**حدث خطأ غير معروف قم باعادة توجيه الرسالة ل@ZQ_lO لحل المشكلة\n{reqt}**",
+                        f"**حدث خطأ غير معروف قم باعادة توجيه الرسالة ل@DEV_SAMIR لحل المشكلة\n{reqt}**",
                     )
 
                 return
