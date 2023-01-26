@@ -14,12 +14,12 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.2.0"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "سورس تيبثون <https://github.com/Tepthonee/tt_1>"
-__copyright__ = f" حقوق سورس تيبثون (C) 2020 - 2022  {__author__}"
+__author__ = "سورس سيمو <https://github.com/sourcesemsem/PYROGRAM>"
+__copyright__ = f" حقوق سورس سيمو (C) 2020 - 2022  {__author__}"
 
 sbb_b.version = __version__
 sbb_b.tgbot.version = __version__
-LOGS = logging.getLogger("سورس تيبثون")
+LOGS = logging.getLogger("سورس سيمو")
 bot = sbb_b
 tbot = tgbot
 
