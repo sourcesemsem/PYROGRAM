@@ -62,11 +62,11 @@ def telethon_session():
     # logging in
     try:
         with TelegramClient(StringSession(), API_ID, API_HASH) as jmthon:
-            print("Generating a string session for •TEPTHON•")
+            print("Generating a string session for •SEMO•")
             try:
                 jmthon.send_message(
                     "me",
-                    f"*هذا هو كود سيشن تيليثون الخاص بك:\n\n`{jmthon.session.save()}`\n\nلا تشارك هذا الكود مع اي مستخدم !*\n@Tepthone",
+                    f"*هذا هو كود سيشن تيليثون الخاص بك:\n\n`{jmthon.session.save()}`\n\nلا تشارك هذا الكود مع اي مستخدم !*\n@FTTUTY",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -90,7 +90,7 @@ def telethon_session():
     except Exception as er:
         print("Unexpected Error Occurred while Creating Session")
         print(er)
-        print("If you think It as a Bug, Report to @Tepthon_Help\n\n")
+        print("If you think It as a Bug, Report to @FTTUTT0\n\n")
 
 
 def pyro_session():
