@@ -26,7 +26,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد تيبثون")
+LOGS = logging.getLogger("اعداد سيمو")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -54,9 +54,9 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await sbb_b(JoinChannelRequest("@Tepthon"))
-        await sbb_b(JoinChannelRequest("@P17_12"))
-        await sbb_b(JoinChannelRequest("@Tepthon_Help"))
+        await sbb_b(JoinChannelRequest("@FTTUTT1"))
+        await sbb_b(JoinChannelRequest("@FTTUTY"))
+        await sbb_b(JoinChannelRequest("@FTTUTT0"))
     except BaseException:
         pass
 
@@ -95,7 +95,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/f1e757035e56613a9ef92.jpg",
                 caption="**تم تشغيل سورس تيبثون بنجاح لعرض الاوامر ارسل .الاوامر**",
-                buttons=[(Button.url("كروب المساعدة", "https://t.me/Tepthon_Help"),)],
+                buttons=[(Button.url("الـمـبـرمـجہ سـمـيـر", "https://t.me/DEV_SAMIR"),)],
             )
     except Exception as e:
         LOGS.error(e)
