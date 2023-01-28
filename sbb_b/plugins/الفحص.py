@@ -36,7 +36,7 @@ async def amireallyalive(event):
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "‌‎⿻┊‌‎‌‎"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "[• 父┊‌‌𝚂𝙴𝙼𝙾 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ✓ 父 •](t.me/FTTUTY)**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "[• 父 ✓ 𝚂𝙴𝙼𝙾 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ✓ 父 •](t.me/FTTUTY)**"
     JMTHON_IMG = gvarstatus("ALIVE_PIC")
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
@@ -71,12 +71,13 @@ async def amireallyalive(event):
 
 
 temp = """{ALIVE_TEXT}
-**{EMOJI} 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𖠄 :** `{dbhealth}`
-**{EMOJI} 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𖠄:** `{telever}`
-**{EMOJI} 𝚂𝙴𝙼𝙾 𖠄 :** `{jmver}`
-**{EMOJI} 𝙿𝚈𝚃𝙷𝙾𝙽 𖠄 :** `{pyver}`
-**{EMOJI} 𝚄𝙿𝚃𝙸𝙼𝙴 𖠄 :** `{uptime}`
-**{EMOJI} 𝙽𝙰𝙼𝙴 𖠄:** {mention}"""
+\n**{EMOJI} 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 ➪︎ :** `{dbhealth}`
+\n**{EMOJI} 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 ➪︎ :** `{telever}`
+\n**{EMOJI} 𝚂 𝙴 𝙼 𝙾  ➪︎ :** `{jmver}`
+\n**{EMOJI} 𝙿𝚈𝚃𝙷𝙾𝙽   ➪︎ :** `{pyver}`
+\n**{EMOJI} 𝚄𝙿𝚃𝙸𝙼𝙴   ➪︎ :** `{uptime}`
+\n**{EMOJI} 𝙽 𝙰 𝙼 𝙴  ➪︎ :** {mention}
+\n**[• 父 ✓ 𝚂𝙴𝙼𝙾 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 ✓ 父 •](t.me/FTTUTY)"""
 
 
 def jmthonalive_text():
