@@ -900,6 +900,6 @@ async def approve_p_m(event):
     await edit_or_reply(
         event,
         APPROVED_PMs,
-        file_name="قائمة الحماية تيبثون.txt",
-        caption="قائمة المسموح لهم الحالية\n سيمو تيبثون العربي \n @FTTUTY",
+        file_name="قائمة الحماية سيمو.txt",
+        caption="قائمة المسموح لهم الحالية\n سيمو العربي \n @FTTUTY",
     )  # ترجمه وكتابة فريق تيبثون
