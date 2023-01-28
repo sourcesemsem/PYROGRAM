@@ -465,7 +465,7 @@ async def you_dm_other(event):
             f"{cmdhd}بلوك",
             f"{cmdhd}رفض",
             f"{cmdhd}س",
-            f"{cmdhd}قبول",
+            f"{cmdhd}ر",
             f"{cmdhd}سماح",
         )  # ترجمه وكتابة فريق تيبثون
     ):
@@ -901,5 +901,5 @@ async def approve_p_m(event):
         event,
         APPROVED_PMs,
         file_name="قائمة الحماية تيبثون.txt",
-        caption="قائمة المسموح لهم الحالية\n سورس تيبثون العربي \n @jmthon",
+        caption="قائمة المسموح لهم الحالية\n سيمو تيبثون العربي \n @FTTUTY",
     )  # ترجمه وكتابة فريق تيبثون
