@@ -13,7 +13,7 @@ from ..core.session import sbb_b
 from ..helpers.utils import _format, _jmthonutils, install_pip, reply_id
 from .decorators import admin_cmd, sudo_cmd
 
-LOGS = logging.getLogger("سورس تيبثون")
+LOGS = logging.getLogger("سورس سيمو")
 
 
 def load_module(shortname, plugin_path=None):
