@@ -7,7 +7,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/thejmthon/8",
+  "repository": "https://github.com/sourcesemsem/PYROGRAM",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -51,7 +51,7 @@
     },
     "TZ": {
       "description": "المنطقه الزمنيه من القارة الخاصه بك وعاصمه بلدك يجب ان يكون اول حرف كبير",
-      "value": "Asia/Baghdad",
+      "value": "Africa/Cairo",
       "required": false
     }
   },
