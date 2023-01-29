@@ -8,7 +8,7 @@ from ..core import check_owner
 from ..Config import Config
 from razan.CMD.aomari import *
 
-ROE = "** هـذه هي قائمة اوامـر سـورس تيبثون **"
+ROE = "** هـذه هي قائمة اوامـر سـورس سيمو **"
 ROZADM = "من هنا يمكنك ايجاد جميع"
 RAZAN = Config.TG_BOT_USERNAME
 
@@ -21,7 +21,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         await sbb_b.get_me()
         if query.startswith("اوامري") and event.query.user_id == sbb_b.uid:
             buttons = [
-                [Button.inline("معلومات تيبثون", data="AOMRDB")],
+                [Button.inline("معلومات سيمو", data="AOMRDB")],
                 [
                     Button.inline("البوت", data="eeeeq"),
                     Button.inline("الكروب", data="admincmd_s")
@@ -61,7 +61,7 @@ async def repo(event):
 @check_owner
 async def _(event):
     butze = [
-                [Button.inline("معلومات تيبثون", data="AOMRDB")],
+                [Button.inline("معلومات سيمو", data="AOMRDB")],
                 [
                     Button.inline("البوت", data="eeeeq"),
                     Button.inline("الكروب", data="admincmd_s")
@@ -157,7 +157,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -177,7 +177,7 @@ async def varssett(event):
 
 *يمكنك استخدا الزخرفة او اللغة الانكليزية او العربية الخ..
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -201,7 +201,7 @@ async def varssett(event):
 .زخرفة الوقت 9
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -221,7 +221,7 @@ async def varssett(event):
 
 *يمكنك استخدا الزخرفة او اللغة الانكليزية او العربية الخ..
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
@@ -264,7 +264,7 @@ async def varssett(event):
 
 * يمكنك كتابة اي كليشة مثلا: عزيزي المستخدم تم حظرك 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -283,7 +283,7 @@ async def varssett(event):
 الاستخدام : تقوم بالرد على عدد التحذيرات كرقم  بالامر   `.وضع عدد التحذيرات `
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -303,7 +303,7 @@ async def varssett(event):
 
 * يمكنك الحصول على  كليشة جاهزة من هذه القناة @Tepthon
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -324,7 +324,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : **يمكنك استخدام الاوامر في اي دردشة او محادثة**
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="pmvars")],
         ],
@@ -364,7 +364,7 @@ async def varssett(event):
 * كيفية جلب رابط الصورة؟
 -بالرد على الصورة المراد استخراج منها الرابط ب  `.تلكراف ميديا`
 ملاحظة : **يمكنك استخدام الاوامر في اي دردشة او محادثة**
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="alivevar")],
         ],
@@ -383,7 +383,7 @@ async def varssett(event):
 
 * يمكنك الحصول على  كليشة جاهزة من هذه القناة @Tepthon
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="alivevar")],
         ],
@@ -402,7 +402,7 @@ async def varssett(event):
 الاستخدام : تقوم بالرد على الرمز التي تريد وضعه بالامر   `.وضع رمز الفحص `
 
 ملاحظة : يمكنك استخدام الاوامر في اي دردشة او محادثة
-اوامر فارات سورس تيبثون @Tepthon""",
+اوامر فارات سورس سيمو @FTTUTY""",
         buttons=[
             [Button.inline("رجوع", data="alivevar")],
         ],
