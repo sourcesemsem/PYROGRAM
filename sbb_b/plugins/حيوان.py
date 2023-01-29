@@ -12,7 +12,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 
-from sbb_b import jepiq
+from sbb_b import sbb_b
 from sbb_b.core.logger import logging
 
 from ..Config import Config
