@@ -3,15 +3,15 @@ import re
 import time
 from platform import python_version
 
-from sbb_b import version, Button
-from sbb_b.errors.rpcerrorlist import (
+from telethon import version, Button
+from telethon.errors.rpcerrorlist import (
     MediaEmptyError,
     WebpageCurlFailedError,
     WebpageMediaEmptyError,
 )
-from sbb_b.events import CallbackQuery
+from telethon.events import CallbackQuery
 
-from sbb_b import StartTime, sbb_b, JEPVERSION
+from sbb_b import StartTime, jepiq, JEPVERSION
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
