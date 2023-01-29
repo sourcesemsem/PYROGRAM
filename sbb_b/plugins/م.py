@@ -11,7 +11,7 @@ from sbb_b.errors.rpcerrorlist import (
 )
 from sbb_b.events import CallbackQuery
 
-from sbb_b import StartTime, jepiq, JEPVERSION
+from sbb_b import StartTime, sbb_b, JEPVERSION
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
