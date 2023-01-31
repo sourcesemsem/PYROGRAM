@@ -182,7 +182,7 @@ async def iq(cloneiq):
         await cloneiq.client.send_message(BOTLOG_CHATID, f"**🝳 ⦙   حـذف الـرسائل 🗳️** \n{result}")
     await sleep(5)
     await hi.delete()
-@iqthon.iq_cmd(incoming=True)
+@sbb_b.iq_cmd(incoming=True)
 async def filter_incoming_handler(handler):  # sourcery no-metrics
     if handler.sender_id == handler.client.uid:
         return
