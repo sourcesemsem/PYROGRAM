@@ -11,7 +11,7 @@ from telethon.errors.rpcerrorlist import (
 )
 from telethon.events import CallbackQuery
 
-from sbb_b import StartTime, sbb_b, JEPVERSION
+from sbb_b import StartTime, sbb_b, JMVERSION
 
 from ..Config import Config
 from ..core.managers import edit_or_reply
@@ -58,4 +58,4 @@ async def amireallyalive(event):
 async def on_plug_in_callback_query_handler(event):
     statstext = await catalive(StartTime)
     await event.answer(statstext, cache_time=0, alert=True)
-#tepthon
+#semo
