@@ -28,7 +28,7 @@ jmthonversion = "7.2.0"
 
 
 def close_connection(*_):
-    print("تم اغلاق الاتصال بالسورس")
+    print("تم اغلاق الاتصال بالسورس سيمو")
     runasync(sbb_b.disconnect())
     sys.exit(143)
 
