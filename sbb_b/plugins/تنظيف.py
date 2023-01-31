@@ -36,9 +36,9 @@ async def iq(cloneiq):
                         if msgs:
                             await cloneiq.client.delete_messages(chat, msgs)
                     elif ty == "s":
-                        error += f"\n**🝳 ⦙   هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+                        error += f"\n🝳 ⦙   هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
                     else:
-                        error += f"\n\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+                        error += f"\n\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
             else:
                 count += 1
                 async for msg in cloneiq.client.iter_messages(cloneiq.chat_id, limit=(int(input_str) - 1), offset_id=reply.id, reverse=True):
@@ -75,9 +75,9 @@ async def iq(cloneiq):
                 if msgs:
                     await cloneiq.client.delete_messages(chat, msgs)
             else:
-                error += f"\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :** "
+                error += f"\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 : "
         elif input_str:
-            error += f"\n🝳 ⦙   **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+            error += f"\n🝳 ⦙   هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
         elif p_type is not None:
             for ty in p_type:
                 if ty in Tnsmeet:
@@ -86,11 +86,12 @@ async def iq(cloneiq):
                         msgs.append(msg)
                         if len(msgs) == 50:
                             await cloneiq.client.delete_messages(chat, msgs)
-                            msgs = []
+
+msgs = []
                     if msgs:
                         await cloneiq.client.delete_messages(chat, msgs)
                 else:
-                    error += f"\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+                    error += f"\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
         else:
             async for msg in cloneiq.client.iter_messages(chat, min_id=cloneiq.reply_to_msg_id - 1 ):
                 count += 1
@@ -113,9 +114,9 @@ async def iq(cloneiq):
                     if msgs:
                         await cloneiq.client.delete_messages(chat, msgs)
                 elif ty == "s":
-                    error += f"\n**🝳 ⦙   لا تستطـيع استـخدام امر التنظيف عبر البحث مع الاضافه 🔎**"
+                    error += f"\n🝳 ⦙   لا تستطـيع استـخدام امر التنظيف عبر البحث مع الاضافه 🔎"
                 else:
-                    error += f"\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+                    error += f"\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
         elif p_type == "s":
             try:
                 cont, inputstr = input_str.split(" ")
@@ -141,7 +142,7 @@ async def iq(cloneiq):
             if msgs:
                 await cloneiq.client.delete_messages(chat, msgs)
         else:
-            error += f"\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+            error += f"\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
     elif p_type is not None:
         for ty in p_type:
             if ty in Tnsmeet:
@@ -155,9 +156,9 @@ async def iq(cloneiq):
                 if msgs:
                     await cloneiq.client.delete_messages(chat, msgs)
             elif ty == "s":
-                error += f"\n**🝳 ⦙   لا تستطـيع استـخدام امر التنظيف عبر البحث مع الاضافه 🔎**"
+                error += f"\n🝳 ⦙   لا تستطـيع استـخدام امر التنظيف عبر البحث مع الاضافه 🔎"
             else:
-                error += f"\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+                error += f"\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
     elif input_str.isnumeric():
         async for msg in cloneiq.client.iter_messages(chat, limit=int(input_str) + 1):
             count += 1
@@ -168,21 +169,22 @@ async def iq(cloneiq):
         if msgs:
             await cloneiq.client.delete_messages(chat, msgs)
     else:
-        error += "\n**🝳 ⦙   لم يتـم تحـديد الرسـالة أرسل  (.الاوامر ) و رؤية اوامر التنظيف  📌**"
-    if msgs:
+        error += "\n🝳 ⦙   لم يتـم تحـديد الرسـالة أرسل  (.الاوامر ) و رؤية اوامر التنظيف  📌"
+
+if msgs:
         await cloneiq.client.delete_messages(chat, msgs)
     if count > 0:
         result += "🝳 ⦙   تـم الأنتـهاء من التـنظيف السـريع  ✅  \n 🝳 ⦙   لقـد  تـم حـذف \n  🝳 ⦙   عـدد  " + str(count) + " من الـرسائـل 🗑️"
     if error != "":
-        result += f"\n\n**🝳 ⦙  عـذرا هنـاك خطـأ ❌:**{error}"
+        result += f"\n\n🝳 ⦙  عـذرا هنـاك خطـأ ❌:{error}"
     if result == "":
-        result += "**🝳 ⦙   لا تـوجد رسـائل لـتنظيفها ♻️**"
+        result += "🝳 ⦙   لا تـوجد رسـائل لـتنظيفها ♻️"
     hi = await cloneiq.client.send_message(cloneiq.chat_id, result)
     if BOTLOG:
-        await cloneiq.client.send_message(BOTLOG_CHATID, f"**🝳 ⦙   حـذف الـرسائل 🗳️** \n{result}")
+        await cloneiq.client.send_message(BOTLOG_CHATID, f"🝳 ⦙   حـذف الـرسائل 🗳️ \n{result}")
     await sleep(5)
     await hi.delete()
-@sbb_b.iq_cmd(incoming=True)
+@sbb_b.ar_cmd(incoming=True)
 async def filter_incoming_handler(handler):  # sourcery no-metrics
     if handler.sender_id == handler.client.uid:
         return
@@ -218,4 +220,4 @@ async def filter_incoming_handler(handler):  # sourcery no-metrics
             elif trigger.reply:
                 await handler.reply(trigger.reply.format(mention=mention, title=title, count=count, first=first, last=last, fullname=fullname, username=username,
                         userid=userid, my_first=my_first,
-                        my_last=my_last, my_fullname=my_fullname, my_username=my_username, my_mention=my_mention,                    ),                )
+                        my_last=my_last, my_fullname=my_fullname, my_username=my_username, my_mention=my_mention,                    ),                ) 
