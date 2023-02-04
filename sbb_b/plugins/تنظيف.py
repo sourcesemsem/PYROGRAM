@@ -75,19 +75,17 @@ async def iq(cloneiq):
                 if msgs:
                     await cloneiq.client.delete_messages(chat, msgs)
             else:
-                error += f"\n🝳 ⦙   {ty}  هنـاك خطـا فـي تركـيب الجمـلة 🔩 : "
-        elif input_str:
-            error += f"\n🝳 ⦙   هنـاك خطـا فـي تركـيب الجمـلة 🔩 :"
-        elif p_type is not None:
-            for ty in p_type:
-                if ty in Tnsmeet:
-                    async for msg in cloneiq.client.iter_messages(cloneiq.chat_id, min_id=cloneiq.reply_to_msg_id - 1, filter=Tnsmeet[ty]):
-                        count += 1
-                        msgs.append(msg)
-                        if len(msgs) == 50:
-                            await cloneiq.client.delete_messages(chat, msgs)
-
-msgs = []
+                error += f"\n**🝳 ⦙   هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+                    else:
+                        error += f"\n\n🝳 ⦙   `{ty}`  **هنـاك خطـا فـي تركـيب الجمـلة 🔩 :**"
+            else:
+                count += 1
+                async for msg in cloneiq.client.iter_messages(cloneiq.chat_id, limit=(int(input_str) - 1), offset_id=reply.id, reverse=True):
+                    msgs.append(msg)
+                    count += 1
+                    if len(msgs) == 50:
+                        await cloneiq.client.delete_messages(chat, msgs)
+                        msgs = []
                     if msgs:
                         await cloneiq.client.delete_messages(chat, msgs)
                 else:
