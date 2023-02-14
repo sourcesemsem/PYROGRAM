@@ -15,7 +15,7 @@ loop = None
 if Config.STRING_SESSION:
     session = bothseesion(Config.STRING_SESSION, LOGS)
 else:
-    session = "tepthon"
+    session = "SEMO"
 
 try:
     sbb_b = JmthonClient(
