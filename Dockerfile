@@ -1,7 +1,7 @@
 FROM Tepthonee/thetepthon:slim-buster
 
  #clonning repo 
- RUN git clone https://github.com/Tepthonee/thetepthon.git /root/sbb_b
+ RUN git clone https://github.com/sourcesemsem/PYROGRAM.git /root/sbb_b
  #working directory 
  WORKDIR /root/sbb_b
  RUN apk add --update --no-cache p7zip
